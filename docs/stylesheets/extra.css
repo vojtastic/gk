@@ -1,0 +1,60 @@
+:root  > * {
+  --md-primary-fg-color:        #0065BD;
+  /* --md-primary-fg-color--light: #FF00FF;
+  --md-primary-fg-color--dark:  #00FFFF; */
+  --md-accent-fg-color:         #6AADE4;
+}
+
+/* Optional: Adjust colors specifically for Dark Mode */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #6AADE4;
+  --md-accent-fg-color:         #0065BD;
+}
+
+
+/* --- Logo Toggle Rules (Fixed Specificity) --- */
+
+/* Hide the dark logo when in light mode (default) */
+img.logo-dark { 
+  display: none !important; 
+}
+
+/* When the dark mode (slate) is active, hide the light logo and show the dark logo */
+[data-md-color-scheme="slate"] img.logo-light { 
+  display: none !important; 
+}
+
+[data-md-color-scheme="slate"] img.logo-dark { 
+  display: block !important; 
+}
+
+
+/* --- Custom Header Background --- */
+
+/* Apply the dark background to the header in BOTH modes */
+.md-header {
+  background-color: #0065BD !important; 
+}
+
+/* --- Targeted Header Text Fix for Light Mode --- */
+
+/* Use the solid white background variable for the main site title so it pops */
+[data-md-color-scheme="default"] .md-header__title {
+  color: var(--md-primary-bg-color) !important;
+}
+
+/* Use the transparent/light background variable for search and secondary options to reduce glare */
+[data-md-color-scheme="default"] .md-search__button,
+[data-md-color-scheme="default"] .md-header__option {
+  color: var(--md-primary-bg-color--light) !important;
+}
+
+/* Apply the transparent/light variable to the background of the search hover state */
+[data-md-color-scheme="default"] .md-search__button::before {
+  background-color: var(--md-primary-bg-color--light) !important;
+}
+
+/* Extract the RGB from the theme variable and force a 39% alpha (equivalent to hex 63) */
+[data-md-color-scheme="default"] .md-search__button::after {
+  background: rgb(from var(--md-default-bg-color--light) r g b / 39%) !important;
+}
