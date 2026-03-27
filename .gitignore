@@ -1,0 +1,17 @@
+# Ignore the Zensical/MkDocs build directory
+site/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
