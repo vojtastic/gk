@@ -5,13 +5,7 @@ hide:
   - toc
 ---
 
-# Doporučený studijní plán {align=center style="margin-bottom:0;"}
-
-Geodézie a kartografie (B36GK)
-{style="text-align:center; font-size: 1.175em; margin-top:10px; margin-bottom:0; line-height:1.0;"}
-
-studijní program
-{style="text-align:center; font-size: 0.775em; margin-top:0; margin-bottom:30px;"}
+# Doporučený studijí plán oboru Geodézie a kartografie
 
 [1. semestr :lucide-corner-right-down:](#1-semestr){ .md-button }
 [2. semestr :lucide-corner-right-down:](#2-semestr){ .md-button }
@@ -573,9 +567,9 @@ předmět lze zapsat na katedrách __101__, __102__, __154__ nebo __155__
         row-gap: 10px;
 
         /* background-color: var(--md-default-fg-color--lightest); */
-        padding: .4rem;
+        padding: 10px;
         border: 2px dashed var(--md-default-fg-color--light);
-        border-radius: .6rem;
+        border-radius: .2rem;
     }
     .elective_group > p{
         font-size: 80%;
@@ -593,26 +587,14 @@ předmět lze zapsat na katedrách __101__, __102__, __154__ nebo __155__
     .course{                              /* individual courses */
         display: flex;
         flex-direction: column;
-        padding: .5rem;
-        /* border: 2px solid var(--md-default-fg-color--light); */
-        /* border-radius: .2rem; */
+        padding: 4px;
+        border: 2px solid var(--md-default-fg-color--light);
+        border-radius: .2rem;
         background-color: var(--md-default-fg-color--lightest);
-        /* background-color: rgba(var(--md-default-fg-color--lightest), 0.5); */
-        background-color: color-mix(in srgb, var(--md-default-fg-color--lightest), transparent 50%);
         position: relative; /* for the KOS logo */
-
-
-        border: .05rem solid var(--md-default-fg-color--lightest);
-        border-radius: .4rem;
-        /* display: block; */
-        /* margin: 0; */
-        /* padding: .8rem; */
-        transition: background-color .25s,border .25s,box-shadow .25s;
     }
     .course:hover{
-        /* background-color: var(--md-code-bg-color); */
-        border-color: #0000;
-        box-shadow: var(--md-shadow-z2);
+        background-color: var(--md-code-bg-color);
     }
     .course p:first-child{                /* course title and ending type */
         margin: 0px 0px 4px 0px;
@@ -647,15 +629,15 @@ předmět lze zapsat na katedrách __101__, __102__, __154__ nebo __155__
         /* height: 70%; */ /* <-- not working when position:relative, not sure why */
         position: absolute;
         height: 10px;
-        bottom: .5rem;
-        right: .5rem;
+        bottom: 6px;
+        right: 6px;
     }
     .course .twemoji.schedule{
         color: var(--md-default-fg-color--lighter);
         position: absolute;
         height: 18px;
-        bottom: 1.2rem;
-        right: .3rem;
+        bottom: 20px;
+        right: 3px;
     }
     .course .twemoji.kos:hover,
     .course .twemoji.schedule:hover{
